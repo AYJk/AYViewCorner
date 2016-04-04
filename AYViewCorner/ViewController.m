@@ -18,21 +18,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     UIImage *touXiangImage = [UIImage imageNamed:@"1352885363498"];
-    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    self.imageView.center = self.view.center;
-    self.imageView.image = touXiangImage;
+    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(150, 30, 210, 200)];
+//    self.imageView.center = self.view.center;
+//    self.imageView.image = touXiangImage;
     [self.view addSubview:_imageView];
+//    self.imageView.backgroundColor = [UIColor redColor];  
+    [self.imageView ay_setCornerRadius:AYRadiusMake(50, 50, 50, 50) backgroundImage:touXiangImage backgroundColor:[UIColor redColor] setContentMode:UIViewContentModeScaleToFill];
+
+//    self.imageView.image = touXiangImage;
+//    self.imageView.backgroundColor = [UIColor redColor];
+//    self.imageView.contentMode = UIViewContentModeScaleAspectFill;
     
-    [self.imageView ay_setTopLeftRadius:10 topRightRadius:10 bottomRightRadius:10 bottomLeftRadius:10 withImage:[UIImage imageNamed:@"1352885363498"]];
-    self.imageView2 = [[UIImageView alloc] initWithFrame:CGRectMake(100, 500, 100, 100)];
-//    self.imageView2.image = image;
-//    self.imageView2.center = self.view.center;
+    self.imageView2 = [[UIImageView alloc] initWithFrame:CGRectMake(150, 400, 210, 200)];
+    self.imageView2.image = touXiangImage;
+    self.imageView2.backgroundColor = [UIColor redColor];
+    self.imageView2.layer.cornerRadius = 50;
+    self.imageView2.layer.masksToBounds = YES;
+//    UIViewContentModeScaleAspectFill 按imageView长宽大的那个进行等比拉伸，保持比例不变。
+//    UIViewContentModeScaleAspectFit 按imageView长宽小的那个进行等比缩小，保持比例不变。
+//    UIViewContentModeScaleToFill 满屏（imageView的size）
+    self.imageView2.contentMode = UIViewContentModeCenter;
     [self.view addSubview:_imageView2];
     
-    UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake(30, 30, 50, 50)];
-    colorView.backgroundColor = [UIColor blackColor];
-    [colorView ay_setTopLeftRadius:20 topRightRadius:20 bottomRightRadius:20 bottomLeftRadius:20 withImage:nil];
+    UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake(30, 30, 100, 200)];
+    [colorView ay_setCornerRadius:AYRadiusMake(50, 50, 50, 50) backgroundImage:nil backgroundColor:[UIColor blueColor]];
     [self.view addSubview:colorView];
+    
+    UIView *colorView2 = [[UIView alloc] initWithFrame:CGRectMake(30, 400, 100, 200)];
+    colorView2.backgroundColor = [UIColor redColor];
+    colorView2.layer.cornerRadius = 50;
+    [self.view addSubview:colorView2];
 }
 
 - (void)didReceiveMemoryWarning {

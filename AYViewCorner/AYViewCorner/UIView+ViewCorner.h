@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIImage+ClipRoundCorner.h"
 
 @interface UIView (ViewCorner)
-- (UIImage *)ay_setTopLeftRadius:(CGFloat)topLeftRadius topRightRadius:(CGFloat)topRightRadius bottomRightRadius:(CGFloat)bottomRightRadius bottomLeftRadius:(CGFloat)bottomLeftRadius withImage:(UIImage *)image;
+- (void)ay_setCornerRadius:(AYRadius)cornerRadius backgroundImage:(UIImage *)image backgroundColor:(UIColor *)color;
+
+- (void)ay_setCornerRadius:(AYRadius)cornerRadius backgroundImage:(UIImage *)image backgroundColor:(UIColor *)color setContentMode:(UIViewContentMode)contentMode;
 @end

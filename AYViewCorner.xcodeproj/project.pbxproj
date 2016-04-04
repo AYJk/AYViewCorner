@@ -16,6 +16,7 @@
 		2510A9A21CB13F250080AE58 /* AYViewCornerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2510A9A11CB13F250080AE58 /* AYViewCornerTests.m */; };
 		2510A9AD1CB13F250080AE58 /* AYViewCornerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2510A9AC1CB13F250080AE58 /* AYViewCornerUITests.m */; };
 		2510A9C51CB15D860080AE58 /* UIView+ViewCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2510A9C41CB15D860080AE58 /* UIView+ViewCorner.m */; };
+		2515103B1CB251EB001D4B5C /* UIImage+ClipRoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2515103A1CB251EB001D4B5C /* UIImage+ClipRoundCorner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		2510A9AE1CB13F250080AE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2510A9C31CB15D860080AE58 /* UIView+ViewCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewCorner.h"; sourceTree = "<group>"; };
 		2510A9C41CB15D860080AE58 /* UIView+ViewCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewCorner.m"; sourceTree = "<group>"; };
+		251510391CB251EB001D4B5C /* UIImage+ClipRoundCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ClipRoundCorner.h"; sourceTree = "<group>"; };
+		2515103A1CB251EB001D4B5C /* UIImage+ClipRoundCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ClipRoundCorner.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 			children = (
 				2510A9C31CB15D860080AE58 /* UIView+ViewCorner.h */,
 				2510A9C41CB15D860080AE58 /* UIView+ViewCorner.m */,
+				251510391CB251EB001D4B5C /* UIImage+ClipRoundCorner.h */,
+				2515103A1CB251EB001D4B5C /* UIImage+ClipRoundCorner.m */,
 			);
 			path = AYViewCorner;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 			files = (
 				2510A98F1CB13F250080AE58 /* ViewController.m in Sources */,
 				2510A98C1CB13F250080AE58 /* AppDelegate.m in Sources */,
+				2515103B1CB251EB001D4B5C /* UIImage+ClipRoundCorner.m in Sources */,
 				2510A9C51CB15D860080AE58 /* UIView+ViewCorner.m in Sources */,
 				2510A9891CB13F250080AE58 /* main.m in Sources */,
 			);
