@@ -22,7 +22,7 @@
  */
 - (void)ay_setCornerRadius:(AYRadius)cornerRadius setNormalImage:(UIImage *)normalImage highlightedImage:(UIImage *)highlightedImage disabledImage:(UIImage *)disableImage selectedImage:(UIImage *)selectedImage backgroundColor:(UIColor *)color;
 /**
- *  UIView及其子类添加圆角并设置背景颜色（推荐于UILabel）
+ *  UIView及其子类添加圆角并设置背景颜色（推荐于UILabel,UIView）
  *
  *  @param cornerRadius 设置四个圆角
  *  @param color        背景颜色

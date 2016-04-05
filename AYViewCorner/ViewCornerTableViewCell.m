@@ -30,9 +30,9 @@
     [self.contentView addSubview:imageView];
     
     UIButton *testButton = [[UIButton alloc] initWithFrame:CGRectMake(50, 5, 70, 30)];
-    [testButton setBackgroundImage:[UIImage imageNamed:@"9680a02f0736d5cfebc9987797650ec1"] forState:UIControlStateNormal];
-    [testButton setTitle:@"button" forState:UIControlStateNormal];
-    [testButton ay_setCornerRadius:AYRadiusMake(10, 10, 10, 10) setNormalImage:[UIImage imageNamed:@"9680a02f0736d5cfebc9987797650ec1"] highlightedImage:nil disabledImage:nil selectedImage:nil backgroundColor:nil];
+    [testButton setTitle:@"normal" forState:UIControlStateNormal];
+    [testButton setTitle:@"highlight" forState:UIControlStateHighlighted];
+    [testButton ay_setCornerRadius:AYRadiusMake(10, 10, 10, 10) setNormalImage:[UIImage imageNamed:@"9680a02f0736d5cfebc9987797650ec1"] highlightedImage:[UIImage imageNamed:@"1352885363498"] disabledImage:nil selectedImage:nil backgroundColor:nil];
     [self.contentView addSubview:testButton];
 
     UILabel *testLabel = [[UILabel alloc] initWithFrame:CGRectMake(130, 5, 100, 30)];
