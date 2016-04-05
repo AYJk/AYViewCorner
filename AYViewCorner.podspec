@@ -1,12 +1,13 @@
 Pod::Spec.new do |s|
   s.name         = "AYViewCorner"
   s.version      = "1.0.0"
-  s.summary      = "photo browser for ios."
-  s.homepage     = "https://github.com/hujewelz/HUPhotoBrowser"
+  s.summary      = "set round corner without offScreen rendered"
+  s.homepage     = "https://github.com/AYJk/AYViewCorner"
   s.license      = "MIT"
-  s.author             = { "Jewelz Hu" => "hujewelz@163.com" }
+  s.author             = { "Andy" => "andy5759520@gmail.com" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/hujewelz/HUPhotoBrowser.git", :tag => "0.0.2" }
-  s.source_files  = "HUPhotoBrowser", "HUPhotoBrowser/**/*.{h,m}"
-   s.framework  = "UIKit"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.source       = { :git => "https://github.com/AYJk/AYViewCorner.git", :tag => "1.0.0" }
+  s.source_files = "AYViewCorner/AYViewCorner/*.{h,m}"
+  s.requires_arc = true
+
+end
