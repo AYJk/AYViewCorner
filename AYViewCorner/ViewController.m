@@ -11,12 +11,16 @@
 @interface ViewController ()
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIImageView *imageView2;
+@property (nonatomic, strong) UITableView *viewCornertableView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.viewCornertableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    
     UIImage *touXiangImage = [UIImage imageNamed:@"1352885363498"];
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(150, 30, 210, 200)];
 //    self.imageView.center = self.view.center;

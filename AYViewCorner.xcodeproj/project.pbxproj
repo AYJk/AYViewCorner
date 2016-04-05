@@ -17,6 +17,7 @@
 		2510A9AD1CB13F250080AE58 /* AYViewCornerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2510A9AC1CB13F250080AE58 /* AYViewCornerUITests.m */; };
 		2510A9C51CB15D860080AE58 /* UIView+ViewCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2510A9C41CB15D860080AE58 /* UIView+ViewCorner.m */; };
 		2515103B1CB251EB001D4B5C /* UIImage+ClipRoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2515103A1CB251EB001D4B5C /* UIImage+ClipRoundCorner.m */; };
+		A16EE3121CB3B7B1007E86D0 /* CornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16EE3111CB3B7B1007E86D0 /* CornerRadiusViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		251510391CB251EB001D4B5C /* UIImage+ClipRoundCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ClipRoundCorner.h"; sourceTree = "<group>"; };
 		2515103A1CB251EB001D4B5C /* UIImage+ClipRoundCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ClipRoundCorner.m"; sourceTree = "<group>"; };
 		A16EE30F1CB3B4D2007E86D0 /* AYViewCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AYViewCorner.h; sourceTree = "<group>"; };
+		A16EE3101CB3B7B1007E86D0 /* CornerRadiusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CornerRadiusViewController.h; sourceTree = "<group>"; };
+		A16EE3111CB3B7B1007E86D0 /* CornerRadiusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CornerRadiusViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				2510A98B1CB13F250080AE58 /* AppDelegate.m */,
 				2510A98D1CB13F250080AE58 /* ViewController.h */,
 				2510A98E1CB13F250080AE58 /* ViewController.m */,
+				A16EE3101CB3B7B1007E86D0 /* CornerRadiusViewController.h */,
+				A16EE3111CB3B7B1007E86D0 /* CornerRadiusViewController.m */,
 				2510A9901CB13F250080AE58 /* Main.storyboard */,
 				2510A9931CB13F250080AE58 /* Assets.xcassets */,
 				2510A9951CB13F250080AE58 /* LaunchScreen.storyboard */,
@@ -291,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2510A98F1CB13F250080AE58 /* ViewController.m in Sources */,
+				A16EE3121CB3B7B1007E86D0 /* CornerRadiusViewController.m in Sources */,
 				2510A98C1CB13F250080AE58 /* AppDelegate.m in Sources */,
 				2515103B1CB251EB001D4B5C /* UIImage+ClipRoundCorner.m in Sources */,
 				2510A9C51CB15D860080AE58 /* UIView+ViewCorner.m in Sources */,
