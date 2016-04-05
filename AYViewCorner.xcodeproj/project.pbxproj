@@ -57,6 +57,7 @@
 		2510A9C41CB15D860080AE58 /* UIView+ViewCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewCorner.m"; sourceTree = "<group>"; };
 		251510391CB251EB001D4B5C /* UIImage+ClipRoundCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ClipRoundCorner.h"; sourceTree = "<group>"; };
 		2515103A1CB251EB001D4B5C /* UIImage+ClipRoundCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ClipRoundCorner.m"; sourceTree = "<group>"; };
+		A16EE30F1CB3B4D2007E86D0 /* AYViewCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AYViewCorner.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +155,7 @@
 				2510A9C41CB15D860080AE58 /* UIView+ViewCorner.m */,
 				251510391CB251EB001D4B5C /* UIImage+ClipRoundCorner.h */,
 				2515103A1CB251EB001D4B5C /* UIImage+ClipRoundCorner.m */,
+				A16EE30F1CB3B4D2007E86D0 /* AYViewCorner.h */,
 			);
 			path = AYViewCorner;
 			sourceTree = "<group>";
@@ -225,7 +227,6 @@
 				TargetAttributes = {
 					2510A9831CB13F250080AE58 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = V63C2B5NRE;
 					};
 					2510A99C1CB13F250080AE58 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -546,12 +547,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: HangZhou YiTou Outsource Of Financial Services Co., Ltd. (V63C2B5NRE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AYViewCorner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ayjkdev.AYViewCorner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d49bff53-9eaa-4b6a-a4ee-8bb9af91d263";
+				PROVISIONING_PROFILE = "";
 			};
 			name = "ad hoc distribution";
 		};

@@ -24,5 +24,7 @@ static inline AYRadius AYRadiusMake(CGFloat topLeft ,CGFloat topRight, CGFloat b
     return ayRadius;
 }
 @interface UIImage (ClipRoundCorner)
-- (UIImage *)ay_clipImageWithCornerRadius:(AYRadius)cornerRadius withDrawRect:(CGRect)rect setContentMode:(UIViewContentMode)contentMode;
+
++ (UIImage *)ay_clipImageWithCornerRadius:(AYRadius)cornerRadius setImage:(UIImage *)image backgroundColor:(UIColor *)color withDrawRect:(CGRect)rect setContentMode:(UIViewContentMode)contentMode;
+
 @end

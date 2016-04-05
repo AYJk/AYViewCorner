@@ -10,29 +10,40 @@
 
 @implementation UIImage (ClipRoundCorner)
 
-- (UIImage *)ay_clipImageWithCornerRadius:(AYRadius)cornerRadius withDrawRect:(CGRect)rect setContentMode:(UIViewContentMode)contentMode {
++ (UIImage *)ay_clipImageWithCornerRadius:(AYRadius)cornerRadius setImage:(UIImage *)image backgroundColor:(UIColor *)color withDrawRect:(CGRect)rect setContentMode:(UIViewContentMode)contentMode {
+    
+    if (image) {
+        image = [image scaleImageWithContentMode:UIViewContentModeScaleToFill containerRect:rect];
+        color = [UIColor colorWithPatternImage:image];
+    }
     CGFloat imageWidth = rect.size.width;
     CGFloat imageHeight = rect.size.height;
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, [UIScreen mainScreen].scale);
-//    UIGraphicsBeginImageContextWithOptions(CGRectMake(-100, -100, 300, 300).size, NO, [UIScreen mainScreen].scale);
     CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, color.CGColor);
     CGContextMoveToPoint(context, 0, imageHeight * .5);
-    CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);
-    CGContextSetFillColorWithColor(context, [UIColor redColor].CGColor);
     CGContextAddArcToPoint(context, 0, 0, imageWidth * .5, 0, cornerRadius.topLeftCornerRadius);
     CGContextAddArcToPoint(context, imageWidth, 0, imageWidth , imageHeight * .5, cornerRadius.topRightCornerRadius);
     CGContextAddArcToPoint(context, imageWidth, imageHeight, imageWidth * .5, imageHeight, cornerRadius.bottomRightCornerRadius);
     CGContextAddArcToPoint(context, 0, imageHeight, 0, imageHeight * .5, cornerRadius.bottomLeftCornerRadius);
     CGContextClosePath(context);
-    CGContextClip(context);
-    CGContextDrawPath(context, kCGPathFillStroke);
-    CGContextTranslateCTM(context, 0, rect.size.height);
-    CGContextScaleCTM(context, 1, -1);
-    CGRect drawRect = [self drawImageWithContentMode:contentMode containerRect:rect];
-    CGContextDrawImage(context, drawRect, self.CGImage);
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    CGContextDrawPath(context, kCGPathFill);
+    UIImage *outputImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    return image;
+    return outputImage;
+}
+
+- (UIImage *)scaleImageWithContentMode:(UIViewContentMode)contentModel containerRect:(CGRect)rect {
+    
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, [UIScreen mainScreen].scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [UIColor colorWithPatternImage:self].CGColor);
+    CGContextAddRect(context, rect);
+    CGContextDrawPath(context, kCGPathFill);
+    [self drawInRect:[self drawImageWithContentMode:contentModel containerRect:rect]];
+    UIImage *outputImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return outputImage;
 }
 
 - (CGRect)drawImageWithContentMode:(UIViewContentMode)contentMode containerRect:(CGRect)rect {
