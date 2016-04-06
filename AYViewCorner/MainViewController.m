@@ -45,7 +45,9 @@ static NSString *cellID = @"cellID";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    self.title = self.titles[indexPath.row];
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
+    backItem.title = @"back";
+    self.navigationItem.backBarButtonItem = backItem;
     if (indexPath.row == 0) {
         [self.navigationController pushViewController:[ViewController new] animated:YES];
     } else {

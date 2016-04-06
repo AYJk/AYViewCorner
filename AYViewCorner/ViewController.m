@@ -21,6 +21,7 @@ static NSString *viewCornerID = @"viewCornerID";
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    self.title = @"设置AYViewCorner的情况";
     self.viewCornertableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     [self.viewCornertableView registerClass:[ViewCornerTableViewCell class] forCellReuseIdentifier:viewCornerID];
     self.viewCornertableView.delegate = self;
