@@ -22,6 +22,14 @@ and run `pod install` or `pod update`. It will install the most recent version o
 
 After that import \<AYViewCorner/AYViewCorner.h\>.
 
+Use AYViewCorner
+
+![使用AYViewCorner](http://7xrofo.com1.z0.glb.clouddn.com/IMG_064.PNG)
+
+Use  CornerRadius
+
+![使用CornerRadius](http://7xrofo.com1.z0.glb.clouddn.com/IMG_065.PNG)
+
 # Usage
 
 ## UIButton
