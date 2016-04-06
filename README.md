@@ -49,6 +49,8 @@ At the same time, if you want to set UIViewContentMode with UIImageView,I sugges
 
 # Changelog
 
+v 1.0.1 fix some info
+
 v 1.0.0 first version 
 
 # License
@@ -103,7 +105,9 @@ pod 'AYViewCorner'
 
 # Changelog
 
-v 1.0.0 first version 
+v 1.0.1 修正一些信息
+
+v 1.0.0 首次提交 
 
 # 许可证
 AYViewCorner 使用 MIT 许可证，详情见 LICENSE 文件。	
