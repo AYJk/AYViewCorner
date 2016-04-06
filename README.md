@@ -60,7 +60,7 @@ AYViewCorner is provided under the MIT license. See LICENSE file for details.
 这是一个不触发离屏渲染设置圆角的工具类。你可以很容易的保持界面的FPS保持在60左右，足以保证流畅。
 
 # 安装
-推荐使用[CocoaaPods](http://cocoapods.org/)进行安装。
+推荐使用[CocoaPods](http://cocoapods.org/)进行安装。
 
 ```ruby
 pod 'AYViewCorner'
