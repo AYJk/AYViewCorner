@@ -12,7 +12,7 @@ This is a utility class which can help you set round corner without **offScreen 
 You can easily hoding frames at 60fps, the effect looks more smoother than `layer.cornerRadius`.
 
 # Installation
-The perferred way of installation is via [CocoaaPods](http://cocoapods.org/)
+The perferred way of installation is via [CocoaPods](http://cocoapods.org/)
 
 ```ruby
 pod 'AYViewCorner'
