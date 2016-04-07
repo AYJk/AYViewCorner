@@ -111,11 +111,12 @@ pod 'AYViewCorner'
 
 > 如果同时设置图片和颜色，只会显示图片。
 
-# Changelog
+# 版本更新
 
 v 1.0.1 修正一些信息
 
 v 1.0.0 首次提交 
 
 # 许可证
+
 AYViewCorner 使用 MIT 许可证，详情见 LICENSE 文件。	
